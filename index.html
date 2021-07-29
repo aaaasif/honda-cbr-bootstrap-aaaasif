@@ -7,11 +7,8 @@
     <title>honda-cbr</title>
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- sdfg -->
-    <link
-    href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
-    rel="stylesheet"
-  />
+   <!-- font awesome link -->
+   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,15 +16,18 @@
     <!-- header start -->
     <header class="bg-color">
           <section class="">
-            <div class="container-fluid d-flex align-items-center justify-content-around p-lg-4 sm:flex-column">
-              <div class="text-container">
+            <div class="container-fluid d-flex align-items-center justify-content-around p-lg-4 row row-cols-1 row-cols-sm-1 row-cols-md-2">
+              <div class="text-container ">
                 <p class="fw-lighter">Computer-controlled digital transistorized with electronic advance</p>
                 <h2 class="fs-1 fw-bold p-1">Honda CBR 300R</h2>
                 <p class="fw-light">Amet minim mollit non deserunt ullamco est sit aliqua
                   dolor do amet sint. Velit officia consequat duis enim velit
                   mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                  <button type="button" class="btn btn-warning purchase-button px-5  mb-5">Purchase</button>
-            </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                     modal
+                  </button>
+                  
+            </div class="col ">
             <div class="img-container">
                 <img class="fluid" src="images/header-bike.png" alt="">
             </div>
@@ -59,18 +59,16 @@
                           -------->
       <section class="container my-5" id="backpack">
         <h2 class=" fs-1 fw-bolder text-center p-5">latest News</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-4">
             <div class="col">
                 <div class="card border border-3 rounded-3 shadow-lg h-100 ">
                     <img class="p-3" src="images/bike-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Ducati XDIAVEL S-73</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit. Lacus, fermentum amet
-                          faucibus sed id nisi lectus at.</p>
+                        <h5 class="card-title fw-bolder">Ducati XDIAVEL S-73</h5>
+                        <p class="card-text">Ducati renews the XDiavel range by introducing two new versions for 2021: the XDiavel Dark and the XDiavel Black Star. XDiavel, the Ducati cruiser that combines the best of both worlds, is renewed, still remaining true to its philosophy.</p>
                     </div>
                     <div class="m-3">
-                        <button class="">Read More</button>
+                        <button class="customize-button">Read More</button>
                     </div>
                 </div>
             </div>
@@ -78,13 +76,11 @@
                 <div class="card border border-3 rounded-3 shadow-lg h-100">
                     <img class="p-3" src="images/bike-2.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Motorcycles & Scooters</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit. Lacus, fermentum amet
-                          faucibus sed id nisi lectus at.</p>
+                        <h5 class="card-title fw-bolder">Motorcycles & Scooters</h5>
+                        <p class="card-text">The most common brand associated with a scooter is the Vespa, which was developed after World War II in Italy and has since been exported worldwide. ... With an engine that large, some may think it should be classified as a motorcycle, but the key difference is that scooters have a 'step-through' chassis design.</p>
                     </div>
                     <div class="m-3">
-                        <button class="">Read More</button>
+                        <button class="customize-button-2">Read More</button>
                     </div>
                 </div>
             </div>
@@ -92,13 +88,11 @@
                 <div class="card border border-3 rounded-3 shadow-lg h-100">
                     <img class="p-3" src="images/bike-3.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">2021 Honda CBR500R</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit. Lacus, fermentum amet
-                          faucibus sed id nisi lectus at.</p>
+                        <h5 class="card-title fw-bolder">2021 Honda CBR500R</h5>
+                        <p class="card-text">The CBR500R is a sporty motorcycle that actually sports a lot of beginner features along with some good power and performance figures. For example, it has plenty of legroom, which is great for riders of any body type. It's also on the heavier side for a motorcycle, which is great when it comes to stability and balance.</p>
                     </div>
                     <div class="m-3">
-                        <button class="">Read More</button>
+                        <button class="customize-button-2">Read More</button>
                     </div>
                 </div>
             </div>
@@ -109,19 +103,25 @@
       <h2 class=" fs-1 fw-bolder text-center p-5">latest News</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
-              <div class="card border border-1 rounded-3  ">
+              <div class="card border border-1 rounded-3 text-center ">
                   <img class="p-3 w-75 mx-auto" src="images/user-1.png" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
+                  <div class="card-body ">
                       <p class="card-text">Slate helps you see how many more days you need 
                         to work to reach your financial goal for the month and year.</p>
                   </div>
                   <div class="m-3">
-                      
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
                   </div>
+                  <a class="text-decoration-none" href="">Regina Miles</a>
+                  <p>Banker</p>
               </div>
           </div>
           <div class="col">
-              <div class="card border border-1 rounded-3">
+              <div class="card border border-1 rounded-3 text-center">
                   <img class="p-3 w-75 mx-auto" src="images/user-2.png" class="card-img-top" alt="...">
                   <div class="card-body text-center">
                       <p class="card-text">Slate helps you see how 
@@ -131,12 +131,18 @@
                         </p>
                   </div>
                   <div class="m-3">
-                      <button class="panda-btn-buy-now">Read More</button>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
                   </div>
+                  <a class="text-decoration-none" href="">Regina Miles</a>
+                  <p>Banker</p>
               </div>
           </div>
           <div class="col">
-            <div class="card border border-1 rounded-3">
+            <div class="card border border-1 rounded-3 text-center">
                 <img class="p-3 mx-auto w-75 rounded-circle" src="images/user-3.png" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <p class="card-text">Slate helps you see how 
@@ -146,14 +152,20 @@
                       </p>
                 </div>
                 <div class="m-3">
-                    <button class="panda-btn-buy-now">Read More</button>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
                 </div>
+                <a class="text-decoration-none" href="">Regina Miles</a>
+                <p>Banker</p>
             </div>
         </div>
       </div>
   </section>
   <!-- frequently asked question section start -->
-  <section class="container w-100">
+  <section class="container w-100 ">
     <h1 class="text-center p-5 fs-1 fw-bolder">Frequently Asked <span class="common-color">Questions</span> </h1>
     <div class="row row-cols-1 row-cols-md-2 gx-5 " style="">
       <div class="col-6 ">

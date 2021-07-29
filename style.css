@@ -14,6 +14,22 @@ body{
 .purchase-button{
     background-color: tomato;    
 }
+.customize-button{
+    color: white;
+    background-color: tomato;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+}
+.customize-button-2{
+    color: tomato;
+    background-color: white;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid tomato;
+}
 .filter{
     filter: grayscale(100%);
 }
