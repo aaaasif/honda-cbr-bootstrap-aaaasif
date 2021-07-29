@@ -1,0 +1,19 @@
+.bg-color{
+    background-color: #264653;
+}
+.text-container{
+    color: #FFFFFF;
+    width: 456px;
+}
+.common-color{
+    color: #E76F51;
+}
+.purchase-button{
+    color: white;
+    font-size: bold;
+    background-color: tomato;
+    width: 130px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
